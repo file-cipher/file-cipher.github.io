@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4E5DD6"/>
+      <stop offset="0.55" stop-color="#3546B0"/>
+      <stop offset="1" stop-color="#0E8F86"/>
+    </linearGradient>
+    <linearGradient id="lock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3F51B5"/>
+      <stop offset="1" stop-color="#26348F"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0B1450" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)"/>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#gloss)"/>
+  <g transform="translate(0 -12)">
+    <g filter="url(#shadow)">
+      <!-- folder: back with tab -->
+      <path d="M320 356H440Q458 356 470 370L488 392H708Q732 392 732 416V668Q732 692 708 692H316Q292 692 292 668V384Q292 356 320 356Z" fill="#FFFFFF" fill-opacity="0.62"/>
+      <!-- folder: front -->
+      <path d="M316 424H708Q732 424 732 448V668Q732 692 708 692H316Q292 692 292 668V448Q292 424 316 424Z" fill="#FFFFFF"/>
+    </g>
+    <!-- lock -->
+    <path d="M478 548V514A34 34 0 0 1 546 514V548" fill="none" stroke="url(#lock)" stroke-width="18" stroke-linecap="round"/>
+    <rect x="450" y="540" width="124" height="100" rx="20" fill="url(#lock)"/>
+    <circle cx="512" cy="580" r="13" fill="#FFFFFF"/>
+    <rect x="506" y="584" width="12" height="28" rx="6" fill="#FFFFFF"/>
+  </g>
+</svg>

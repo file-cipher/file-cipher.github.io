@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-ru="Политика конфиденциальности — Filecipher" data-title-en="Privacy Policy — Filecipher">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Filecipher</title>
+    <meta name="description" content="How Filecipher handles your files and the Google and Apple account data it can access." />
+    <link rel="icon" href="../assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <script src="../assets/lang.js"></script>
+  </head>
+  <body>
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+
+    <header>
+      <div class="wrap bar">
+        <a class="brand" href="../"><img src="../assets/icon.svg" alt="" />Filecipher</a>
+        <nav>
+          <a class="hide-sm" href="../"><span lang="ru">Главная</span><span lang="en">Home</span></a>
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-set-lang="ru" aria-pressed="false">RU</button>
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <!-- English -->
+      <article class="doc" lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective date: November 19, 2026</p>
+
+        <p>
+          Filecipher (“the app”) is a file manager that stores files on your device and, if you choose, syncs them
+          through your own cloud storage. This policy explains what data the app accesses and what it does with it.
+        </p>
+
+        <div class="note">
+          <p><strong>In short:</strong> Filecipher has no servers of its own. Your files and account data stay on your device and in your own Google Drive or iCloud. The developer never receives, sees or stores any of your data.</p>
+        </div>
+
+        <h2>1. Data stored on your device</h2>
+        <ul>
+          <li><strong>Your files</strong> are stored in the app's private data folder on your device.</li>
+          <li><strong>Encryption passwords</strong> are never saved. Keys derived from them are kept only in memory while the app is running.</li>
+          <li><strong>Settings</strong> (language, theme) are stored locally.</li>
+        </ul>
+
+        <h2>2. Google user data</h2>
+        <p>If you connect Google Drive, the app requests only the following permissions:</p>
+        <ul>
+          <li>
+            <code>drive.appdata</code> — create, read, update and delete files <strong>only inside the app's own hidden folder</strong>
+            in your Google Drive (the “application data folder”). The app cannot see, open or change any other files in your Drive.
+          </li>
+          <li><code>openid</code> and <code>email</code> — your email address, used only to show in the app which Google account is connected.</li>
+        </ul>
+        <p>How this data is used:</p>
+        <ul>
+          <li>The app uses it solely to store and sync the files you put into the “Google Drive” section and to display the connected account.</li>
+          <li>Data travels directly between your device and Google's servers. It is <strong>never sent to the developer</strong> or to any third party.</li>
+          <li>Sign-in tokens are kept in your operating system's secure storage (Keychain on Apple devices, Credential Manager on Windows).</li>
+          <li>Google user data is not sold, not used for advertising, not used to train AI or machine learning models, and not transferred to anyone.</li>
+        </ul>
+        <p>
+          Filecipher's use and transfer of information received from Google APIs adheres to the
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>,
+          including the Limited Use requirements.
+        </p>
+
+        <h2>3. iCloud</h2>
+        <p>
+          On Apple devices the “iCloud” section stores files in the app's own iCloud container in your iCloud Drive, using the
+          Apple ID signed in on the device. The app has no access to your other iCloud data. The data is handled by Apple under
+          <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.
+        </p>
+
+        <h2>4. Encryption</h2>
+        <ul>
+          <li>Before uploading to the cloud, the app offers to encrypt files with your password. Encrypted files are encrypted on your device, so the cloud provider only ever receives encrypted data.</li>
+          <li>File names, sizes and folder structure remain visible to the cloud provider.</li>
+          <li>If you choose not to encrypt, files are uploaded as they are.</li>
+          <li>Passwords cannot be recovered: neither the developer nor anyone else can decrypt your files without the password.</li>
+        </ul>
+
+        <h2>5. No analytics, ads or tracking</h2>
+        <p>The app contains no analytics, advertising, crash-reporting or tracking services, and makes no network requests other than to the cloud services you connect.</p>
+
+        <h2>6. Deleting your data and revoking access</h2>
+        <ul>
+          <li>Disconnecting Google Drive in the app removes the sign-in tokens from your device.</li>
+          <li>You can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</li>
+          <li>To delete the app's hidden data in Google Drive: Google Drive → Settings → Manage apps → Filecipher → Options → Delete hidden app data.</li>
+          <li>Uninstalling the app removes its local data from your device.</li>
+        </ul>
+
+        <h2>7. Children</h2>
+        <p>The app is not directed at children under 13 and does not knowingly collect any personal data from anyone.</p>
+
+        <h2>8. Changes</h2>
+        <p>If this policy changes, the updated version will be published on this page with a new effective date.</p>
+
+        <h2>9. Contact</h2>
+        <p>Questions about this policy: <a href="https://github.com/file-cipher/file-cipher.github.io/issues" rel="noopener">open an issue on GitHub</a>.</p>
+      </article>
+
+      <!-- Russian -->
+      <article class="doc" lang="ru">
+        <h1>Политика конфиденциальности</h1>
+        <p class="meta">Дата вступления в силу: 19 ноября 2026 г.</p>
+
+        <p>
+          Filecipher («приложение») — файловый менеджер, который хранит файлы на вашем устройстве и, если вы захотите,
+          синхронизирует их через ваше собственное облачное хранилище. Здесь описано, к каким данным приложение получает
+          доступ и что с ними делает.
+        </p>
+
+        <div class="note">
+          <p><strong>Коротко:</strong> у Filecipher нет своих серверов. Ваши файлы и данные аккаунтов остаются на устройстве и в вашем собственном Google Диске или iCloud. Разработчик не получает, не видит и не хранит никаких ваших данных.</p>
+        </div>
+
+        <h2>1. Данные на устройстве</h2>
+        <ul>
+          <li><strong>Ваши файлы</strong> хранятся в закрытой папке приложения на устройстве.</li>
+          <li><strong>Пароли шифрования</strong> никогда не сохраняются. Полученные из них ключи держатся только в памяти, пока приложение запущено.</li>
+          <li><strong>Настройки</strong> (язык, тема) хранятся локально.</li>
+        </ul>
+
+        <h2>2. Данные Google</h2>
+        <p>Если вы подключаете Google Диск, приложение запрашивает только эти разрешения:</p>
+        <ul>
+          <li>
+            <code>drive.appdata</code> — создание, чтение, изменение и удаление файлов <strong>только в собственной скрытой папке приложения</strong>
+            на вашем Google Диске («папка данных приложения»). Остальные файлы на Диске приложение не видит, не открывает и не изменяет.
+          </li>
+          <li><code>openid</code> и <code>email</code> — адрес почты, только чтобы показать в приложении, какой аккаунт Google подключён.</li>
+        </ul>
+        <p>Как используются эти данные:</p>
+        <ul>
+          <li>Только для хранения и синхронизации файлов, которые вы кладёте в раздел «Google Диск», и для отображения подключённого аккаунта.</li>
+          <li>Данные передаются напрямую между вашим устройством и серверами Google. Они <strong>никогда не отправляются разработчику</strong> или третьим лицам.</li>
+          <li>Токены входа хранятся в защищённом хранилище системы (Связка ключей на устройствах Apple, Диспетчер учётных данных в Windows).</li>
+          <li>Данные Google не продаются, не используются для рекламы и обучения ИИ и моделей машинного обучения и никому не передаются.</li>
+        </ul>
+        <p>
+          Использование и передача информации, полученной через API Google, соответствуют
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>,
+          включая требования Limited Use.
+        </p>
+
+        <h2>3. iCloud</h2>
+        <p>
+          На устройствах Apple раздел «iCloud» хранит файлы в собственном контейнере приложения в вашем iCloud Drive с помощью
+          Apple ID, под которым выполнен вход на устройстве. К остальным данным iCloud у приложения доступа нет. Данные
+          обрабатывает Apple согласно <a href="https://www.apple.com/legal/privacy/" rel="noopener">политике конфиденциальности Apple</a>.
+        </p>
+
+        <h2>4. Шифрование</h2>
+        <ul>
+          <li>Перед загрузкой в облако приложение предлагает зашифровать файлы паролем. Шифрование происходит на устройстве, поэтому облако получает только зашифрованные данные.</li>
+          <li>Имена файлов, их размеры и структура папок остаются видны облачному сервису.</li>
+          <li>Если вы отказываетесь от шифрования, файлы загружаются как есть.</li>
+          <li>Пароль нельзя восстановить: ни разработчик, ни кто-либо ещё не сможет расшифровать файлы без него.</li>
+        </ul>
+
+        <h2>5. Без аналитики, рекламы и слежки</h2>
+        <p>В приложении нет аналитики, рекламы, сбора отчётов о сбоях и трекеров. Оно не делает сетевых запросов, кроме запросов к подключённым вами облачным сервисам.</p>
+
+        <h2>6. Удаление данных и отзыв доступа</h2>
+        <ul>
+          <li>Отключение Google Диска в приложении удаляет токены входа с устройства.</li>
+          <li>Отозвать доступ приложения можно в любой момент на странице <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</li>
+          <li>Удалить скрытые данные приложения на Google Диске: Google Диск → Настройки → Управление приложениями → Filecipher → Параметры → Удалить скрытые данные приложения.</li>
+          <li>При удалении приложения его локальные данные удаляются с устройства.</li>
+        </ul>
+
+        <h2>7. Дети</h2>
+        <p>Приложение не предназначено для детей младше 13 лет и сознательно не собирает ничьих персональных данных.</p>
+
+        <h2>8. Изменения</h2>
+        <p>Если политика изменится, новая версия будет опубликована на этой странице с новой датой вступления в силу.</p>
+
+        <h2>9. Связь</h2>
+        <p>Вопросы по этой политике: <a href="https://github.com/file-cipher/file-cipher.github.io/issues" rel="noopener">создайте issue на GitHub</a>.</p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© 2026 Filecipher</span>
+        <a href="../"><span lang="ru">Главная</span><span lang="en">Home</span></a>
+      </div>
+    </footer>
+  </body>
+</html>

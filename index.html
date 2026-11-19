@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-ru="Filecipher — зашифрованные файлы в вашем облаке" data-title-en="Filecipher — encrypted files in your own cloud">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filecipher — encrypted files in your own cloud</title>
+    <meta name="description" content="Filecipher is a file manager that encrypts your files on your device and syncs them through your own Google Drive or iCloud. No servers, no tracking." />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/lang.js"></script>
+  </head>
+  <body>
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+
+    <header>
+      <div class="wrap bar">
+        <a class="brand" href="./"><img src="assets/icon.svg" alt="" />Filecipher</a>
+        <nav>
+          <a class="hide-sm" href="#features"><span lang="ru">Возможности</span><span lang="en">Features</span></a>
+          <a href="privacy/"><span lang="ru">Конфиденциальность</span><span lang="en">Privacy</span></a>
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-set-lang="ru" aria-pressed="false">RU</button>
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <img class="icon" src="assets/icon.svg" alt="Filecipher" />
+        <h1>
+          <span lang="ru">Ваши файлы. <span class="gradient">Только ваши.</span></span>
+          <span lang="en">Your files. <span class="gradient">Only yours.</span></span>
+        </h1>
+        <p>
+          <span lang="ru">Filecipher — файловый менеджер, который шифрует файлы прямо на устройстве и синхронизирует их через ваш собственный Google Диск или iCloud. Без серверов, без рекламы и без слежки.</span>
+          <span lang="en">Filecipher is a file manager that encrypts files right on your device and syncs them through your own Google Drive or iCloud. No servers, no ads, no tracking.</span>
+        </p>
+        <div class="chips">
+          <span class="chip">macOS</span>
+          <span class="chip">Windows</span>
+          <span class="chip">Android</span>
+          <span class="chip">iOS</span>
+        </div>
+      </section>
+
+      <h2 class="section-title" id="features"><span lang="ru">Что умеет Filecipher</span><span lang="en">What Filecipher does</span></h2>
+
+      <section class="grid">
+        <article class="card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4Zm0 6a3 3 0 0 1 3 3v1h1v6H8v-6h1v-1a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1Z" /></svg>
+          </div>
+          <h3><span lang="ru">Шифрование на устройстве</span><span lang="en">On-device encryption</span></h3>
+          <p>
+            <span lang="ru">Файлы шифруются паролем ещё до отправки в облако: каскад XChaCha20-Poly1305 и AES-256-GCM, ключ из пароля — Argon2id. Пароль никуда не передаётся.</span>
+            <span lang="en">Files are encrypted with your password before they ever reach the cloud: an XChaCha20-Poly1305 + AES-256-GCM cascade with an Argon2id key. Your password never leaves the device.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96ZM14 13v4h-4v-4H7l5-5 5 5h-3Z" /></svg>
+          </div>
+          <h3><span lang="ru">Ваше облако</span><span lang="en">Your own cloud</span></h3>
+          <p>
+            <span lang="ru">Синхронизация через Google Диск и iCloud. Приложение работает только со своей отдельной папкой и не видит остальные ваши файлы.</span>
+            <span lang="en">Sync through Google Drive and iCloud. The app only works with its own dedicated folder and cannot see the rest of your files.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5ZM12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" /><path d="M2 3.27 3.28 2 22 20.72 20.73 22z" /></svg>
+          </div>
+          <h3><span lang="ru">Никакой слежки</span><span lang="en">Zero tracking</span></h3>
+          <p>
+            <span lang="ru">У Filecipher нет своих серверов, аналитики и рекламы. Разработчик не получает ни ваших файлов, ни данных о вас.</span>
+            <span lang="en">Filecipher has no servers, analytics or ads. The developer never receives your files or any data about you.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2Z" /></svg>
+          </div>
+          <h3><span lang="ru">Удобные файлы</span><span lang="en">Comfortable file manager</span></h3>
+          <p>
+            <span lang="ru">Папки, перетаскивание, просмотр фото и видео прямо в приложении — расшифровка происходит на лету, только в памяти устройства.</span>
+            <span lang="en">Folders, drag and drop, built-in photo and video preview — decryption happens on the fly, only in your device's memory.</span>
+          </p>
+        </article>
+      </section>
+
+      <section class="callout">
+        <div>
+          <strong><span lang="ru">Конфиденциальность — по умолчанию</span><span lang="en">Privacy by default</span></strong>
+          <p>
+            <span lang="ru">Подробно о том, к каким данным приложение получает доступ и как их использует.</span>
+            <span lang="en">Read exactly what data the app can access and how it is used.</span>
+          </p>
+        </div>
+        <a class="btn" href="privacy/"><span lang="ru">Политика конфиденциальности</span><span lang="en">Privacy policy</span> →</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© 2026 Filecipher</span>
+        <a href="privacy/"><span lang="ru">Политика конфиденциальности</span><span lang="en">Privacy policy</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
