@@ -38,7 +38,7 @@
       <!-- English -->
       <article class="doc" lang="en">
         <h1>Privacy Policy</h1>
-        <p class="meta">Effective date: November 19, 2026</p>
+        <p class="meta">Effective date: November 20, 2026</p>
 
         <p>
           Filecipher (“the app”) is a file manager that stores files on your device and, if you choose, syncs them
@@ -93,10 +93,20 @@
           <li>Passwords cannot be recovered: neither the developer nor anyone else can decrypt your files without the password.</li>
         </ul>
 
-        <h2>5. No analytics, ads or tracking</h2>
-        <p>The app contains no analytics, advertising, crash-reporting or tracking services, and makes no network requests other than to the cloud services you connect.</p>
+        <h2>5. Time capsules</h2>
+        <ul>
+          <li>A time capsule is encrypted on your device with a random key. The key is sealed to a future round of the public <a href="https://drand.love" rel="noopener">drand</a> network and opens only with the signature of that round, published at the chosen date.</li>
+          <li>To open a capsule after its date, the app downloads that signature from public drand relays (<code>api.drand.sh</code>, <code>drand.cloudflare.com</code>, <code>api2.drand.sh</code>). Only the round number is sent; the relay sees your IP address like any website. No account and no personal data are involved.</li>
+          <li>Neither the developer nor anyone else can open a capsule before its date.</li>
+        </ul>
 
-        <h2>6. Deleting your data and revoking access</h2>
+        <h2>6. Biometric lock</h2>
+        <p>If you turn on the app lock, the check (Touch ID, Face ID, fingerprint, face or iris) is done by your operating system. The app only learns whether it passed and never receives biometric data.</p>
+
+        <h2>7. No analytics, ads or tracking</h2>
+        <p>The app contains no analytics, advertising, crash-reporting or tracking services, and makes no network requests other than to the cloud services you connect and, for time capsules, to the public drand relays.</p>
+
+        <h2>8. Deleting your data and revoking access</h2>
         <ul>
           <li>Disconnecting Google Drive in the app removes the sign-in tokens from your device.</li>
           <li>You can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</li>
@@ -104,20 +114,20 @@
           <li>Uninstalling the app removes its local data from your device.</li>
         </ul>
 
-        <h2>7. Children</h2>
+        <h2>9. Children</h2>
         <p>The app is not directed at children under 13 and does not knowingly collect any personal data from anyone.</p>
 
-        <h2>8. Changes</h2>
+        <h2>10. Changes</h2>
         <p>If this policy changes, the updated version will be published on this page with a new effective date.</p>
 
-        <h2>9. Contact</h2>
+        <h2>11. Contact</h2>
         <p>Questions about this policy: <a href="https://github.com/file-cipher/file-cipher.github.io/issues" rel="noopener">open an issue on GitHub</a>.</p>
       </article>
 
       <!-- Russian -->
       <article class="doc" lang="ru">
         <h1>Политика конфиденциальности</h1>
-        <p class="meta">Дата вступления в силу: 19 ноября 2026 г.</p>
+        <p class="meta">Дата вступления в силу: 20 ноября 2026 г.</p>
 
         <p>
           Filecipher («приложение») — файловый менеджер, который хранит файлы на вашем устройстве и, если вы захотите,
@@ -173,10 +183,20 @@
           <li>Пароль нельзя восстановить: ни разработчик, ни кто-либо ещё не сможет расшифровать файлы без него.</li>
         </ul>
 
-        <h2>5. Без аналитики, рекламы и слежки</h2>
-        <p>В приложении нет аналитики, рекламы, сбора отчётов о сбоях и трекеров. Оно не делает сетевых запросов, кроме запросов к подключённым вами облачным сервисам.</p>
+        <h2>5. Капсулы времени</h2>
+        <ul>
+          <li>Капсула шифруется на устройстве случайным ключом. Ключ запечатывается под будущий раунд публичной сети <a href="https://drand.love" rel="noopener">drand</a> и открывается только подписью этого раунда, которая публикуется в выбранную дату.</li>
+          <li>Чтобы открыть капсулу после даты, приложение скачивает эту подпись с публичных серверов drand (<code>api.drand.sh</code>, <code>drand.cloudflare.com</code>, <code>api2.drand.sh</code>). Передаётся только номер раунда; сервер видит ваш IP-адрес, как любой сайт. Аккаунтов и персональных данных здесь нет.</li>
+          <li>Ни разработчик, ни кто-либо ещё не может открыть капсулу раньше её даты.</li>
+        </ul>
 
-        <h2>6. Удаление данных и отзыв доступа</h2>
+        <h2>6. Блокировка по биометрии</h2>
+        <p>Если включить блокировку приложения, проверку (Touch ID, Face ID, отпечаток, лицо или радужка) выполняет операционная система. Приложение узнаёт только результат и никогда не получает биометрические данные.</p>
+
+        <h2>7. Без аналитики, рекламы и слежки</h2>
+        <p>В приложении нет аналитики, рекламы, сбора отчётов о сбоях и трекеров. Оно не делает сетевых запросов, кроме запросов к подключённым вами облачным сервисам и, для капсул времени, к публичным серверам drand.</p>
+
+        <h2>8. Удаление данных и отзыв доступа</h2>
         <ul>
           <li>Отключение Google Диска в приложении удаляет токены входа с устройства.</li>
           <li>Отозвать доступ приложения можно в любой момент на странице <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</li>
@@ -184,13 +204,13 @@
           <li>При удалении приложения его локальные данные удаляются с устройства.</li>
         </ul>
 
-        <h2>7. Дети</h2>
+        <h2>9. Дети</h2>
         <p>Приложение не предназначено для детей младше 13 лет и сознательно не собирает ничьих персональных данных.</p>
 
-        <h2>8. Изменения</h2>
+        <h2>10. Изменения</h2>
         <p>Если политика изменится, новая версия будет опубликована на этой странице с новой датой вступления в силу.</p>
 
-        <h2>9. Связь</h2>
+        <h2>11. Связь</h2>
         <p>Вопросы по этой политике: <a href="https://github.com/file-cipher/file-cipher.github.io/issues" rel="noopener">создайте issue на GitHub</a>.</p>
       </article>
     </main>
